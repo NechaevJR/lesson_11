@@ -65,8 +65,8 @@ def multiply(number1, number2):
 
 
 def divide(number1, number2):
-        if number1 or number2 == 0:
-        print("you cannot divide by zero")
+    if number1 or number2 == 0:
+        raise FormulaError(ZeroDivisionError)
     return number1 // number2
 
 
